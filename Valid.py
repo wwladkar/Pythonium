@@ -1,4 +1,4 @@
-
+  # Функции валидации входных данных (для калькулятора например): valid_float - вещественные числа, valid_int - целые числа.
 def valid_float(f):
     num = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.']
     i = 'a'
@@ -37,10 +37,10 @@ def valid_int(f):
                     f = input('Введите целое число: ')
                     break
     return int(f)
-
+# Тесты
 x = input('Введите первое число: ')
-#y = input('Введите второе число: ')
+y = input('Введите второе число: ')
 x = valid_float(x)
-#y = valid_int(y)
+y = valid_int(y)
 print(x, type(x), sep=' ')
-#print(y, type(y), sep=' ')
+print(y, type(y), sep=' ')
